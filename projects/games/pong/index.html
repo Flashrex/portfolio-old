@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Flashrex's Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../../stylesheets/style.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="icon" type="image/png" href="../../../images/website_logo.png">
+    </head>
+    <body class="bg-dark">
+        <div class="content-projects">
+            <div class="navbar">
+                <div class="navbar-logo">
+                    <span class="headline-text font-darkmode-white">Flashrex's Website</span>
+                </div>
+                <div class="vertical-seperator"></div>
+                <div class="navbar-items">
+                    <ul class="header-list">
+                        <li class="list-item"><a class="font-darkmode-white" href="../../../index.html" >Über mich</a></li>
+                        <li class="list-item"><a class="underlined font-darkmode-white" href="../../../projects.html" >Projekte</a></li>
+                        <li class="list-item"><a class="font-darkmode-white" href="../../../contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <img class="darkmode-icon cursor-pointer svg-color-light" id="dm-icon" src="images/sun.svg" style="width: 20px; height: 20px;" onclick="toggleDarkMode()">
+            </div>
+
+            <div class="gol_container">
+                <h2 class="h2_controls_p1 font-darkmode-white">Steuerung - Spieler 1</h2>
+                <p class="p_controls_p1 font-darkmode-white">Oben - W <br> Unten - S</p>
+            
+                <h2 class="h2_controls_p2 font-darkmode-white">Steuerung - Spieler 2</h2>
+                <p class="p_controls_p2 font-darkmode-white">Oben - Pfeil Oben <br> Unten - Pfeil Unten</p>
+                <div class="canvas-container">
+                    <canvas id="pong" width="700" height="500"></canvas>
+                </div>
+            </div>
+        </div>
+        
+
+        <script src="../../../scripts/darkmode.js"></script>
+        <script src="pong.js"></script>
+    </body>
+</html>

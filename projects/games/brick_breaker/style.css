@@ -1,0 +1,17 @@
+:root {
+    --background: #323232;
+    --blue: #5284BF;
+    --red: #BB5852;
+    --grey: #827F7F;
+    --light-grey: #adabab;
+}
+
+body {
+    background-color: var(--background);
+}
+
+canvas {
+    position: absolute;
+    left: 28%;
+    top: 10%;
+}

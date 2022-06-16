@@ -1,0 +1,40 @@
+.canvas-container {
+    margin-top: 10%;
+    margin-left: 25%;
+    width: 50%;
+    height: 70%;
+    text-align: center;
+}
+
+canvas {
+    border-radius: 5px;
+    border: 10px solid var(--bg-contrast-light);
+}
+
+h5 {
+    margin-top: -2%;
+}
+
+.h2_controls_p1 {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+.p_controls_p1 {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+}
+
+.h2_controls_p2 {
+    position: absolute;
+    left: 80%;
+    top: 10%;
+}
+
+.p_controls_p2 {
+    position: absolute;
+    left: 80%;
+    top: 20%;
+}

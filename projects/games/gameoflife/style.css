@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    user-select: none;
+}
+
+.gol_container {
+    text-align: center;
+    margin-top: 2rem;
+    display: inline-flex;
+}
+
+.content {
+    margin-top: 4%;
+    text-align: center;
+}
+
+.buttons {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1vh;
+}
+
+input {
+    color: white;
+    border: none;
+    padding: .8vh .8vw .8vh .8vw;
+    border-radius: 10px;
+    background-color: var(--font-highlight-green);
+    margin: 0.5vw;
+    font-weight: bold;
+    transition: 0.1s ease-in;
+}
+
+.text-box {
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.text-box > ol > li {
+    margin-top: .5rem;
+}
+
+input:hover{
+    filter: brightness(85%);;
+}
+

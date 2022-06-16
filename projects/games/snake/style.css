@@ -1,0 +1,18 @@
+:root {
+    --background: #323232;
+    --blue: #5284BF;
+    --red: #BB5852;
+    --grey: #827F7F;
+    --light-grey: #adabab;
+}
+
+body {
+	background-color: var(--background);
+	text-align: center;
+}
+
+canvas {
+	margin-top: 5%;
+	border-radius: 5%;
+}
+

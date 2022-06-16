@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Flashrex's Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../../stylesheets/style.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="icon" type="image/png" href="../../../images/website_logo.png">
+    </head>
+    <body class="bg-dark">
+        <div class="content-projects">
+            <div class="navbar">
+                <div class="navbar-logo">
+                    <span class="headline-text font-darkmode-white">Flashrex's Website</span>
+                </div>
+                <div class="vertical-seperator"></div>
+                <div class="navbar-items">
+                    <ul class="header-list">
+                        <li class="list-item"><a class="font-darkmode-white" href="../../../index.html" >Über mich</a></li>
+                        <li class="list-item"><a class="underlined font-darkmode-white" href="../../../projects.html" >Projekte</a></li>
+                        <li class="list-item"><a class="font-darkmode-white" href="../../../contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <img class="darkmode-icon cursor-pointer svg-color-light" id="dm-icon" src="images/sun.svg" style="width: 20px; height: 20px;" onclick="toggleDarkMode()">
+            </div>
+
+            <div class="gol_container">
+                <canvas id="canvas" width="800" height="800" style="border:1px solid lightgrey;">
+                    Your browser does not support the HTML5 canvas tag.
+                </canvas>
+                <div class="container">
+                    <div class="text-box font-darkmode-white">
+                        <h3>Regeln:</h3>
+                        <ol>
+                            <li>Jede lebende Zelle mit weniger als 2 Nachbarn stirbt an Unterbevölkerung.</li>
+                            <li>Jede lebende Zelle mit 2 oder 3 lebenden Nachbarn überlebt die aktuelle Generation.</li>
+                            <li>Jede lebende Zelle mit mehr als 3 lebenden Nachbarn stirbt an Überbevölkerung.</li>
+                            <li>Jede tote Zelle mit genau 3 lebenden Nachbarn wird zur lebenden Zelle durch Fortpflanzung.</li>
+                        </ol>
+                    </div>
+                    <div class="buttons">
+                        <input id="btn_toggleGame" type="button" value="▶ Start" onclick="toggleGame()">
+                        <input type="button" value="🛑 Clear" onclick="clearField()">
+                        <input type="button" value="↪ Next" onclick="nextGeneration()">
+                        <input type="button" value="Populate" onclick="regenerate()">
+                        <input type="button" value="Toggle Grid" onclick="toggleGrid()">
+                    </div>
+                </div>
+            </div>
+            
+
+            <section class="projects-section" id="project_container"></section>
+        </div>
+        
+
+        <script src="../../../scripts/darkmode.js"></script>
+        <script src="gameoflife.js" async defer></script>
+    </body>
+</html>
