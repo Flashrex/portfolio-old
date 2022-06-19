@@ -54,5 +54,13 @@ var projects = [
         image_url: "projects/vr_suit/images/logo.png",
         file: "projects/vr_suit/index.html",
         repository: "https://github.com/Flashrex/flashrex.github.io/tree/master/projects/vr_suit"
+    },
+    {
+        headline: "GTA RP Voice",
+        description: "Voice Script Ressource für alt:V Multiplayer.",
+        tags: ["c#", "html", "css", "javascript", "gtav", "alt:V"],
+        image_url: "images/altvoice.png",
+        file: "",
+        repository: "https://github.com/Flashrex/alt-Voice"
     }
 ]
