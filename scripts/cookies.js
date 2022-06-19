@@ -11,11 +11,13 @@ function checkCookies() {
             break;
 
         case "true":
+            //cookies enabled
             darkmode = getCookie('darkmode') === "" ? true : getCookie('darkmode') === "true";
             applyDarkmode();
             break;
 
         case "false":
+            //cookies disabled
             applyDarkmode();
             break;
     }
