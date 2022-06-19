@@ -58,7 +58,7 @@ var projects = [
     {
         headline: "GTA RP Voice",
         description: "Voice Script Ressource für alt:V Multiplayer.",
-        tags: ["c#", "html", "css", "javascript", "gtav", "alt:V", "discord", "2021"],
+        tags: ["c#", "html", "css", "javascript", "gtav", "alt:V", "2021"],
         image_url: "images/altvoice.png",
         file: "",
         repository: "https://github.com/Flashrex/alt-Voice"
@@ -74,7 +74,7 @@ var projects = [
     {
         headline: "alt:V Youtube Tutorial Serie",
         description: "alt:V API Kurs.<br><br>>60.000 Youtube Aufrufe<br>~800 Discord Mitglieder<br>(stand 06.2022)",
-        tags: ["c#", "html", "css", "javascript", "gtav", "alt:V", "2021"],
+        tags: ["c#", "html", "css", "javascript", "gtav", "alt:V", "discord", "2021"],
         image_url: "images/altv.png",
         file: "",
         repository: "https://github.com/Flashrex/altv-tutorial"
