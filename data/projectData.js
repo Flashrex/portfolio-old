@@ -13,7 +13,7 @@ var projects = [
         languages: "Typescript, NodeJs",
         image_url: "images/bugtracker.png",
         file: "",
-        repository: "https://github.com/Flashrex/Bugtracker"
+        repository: "https://github.com/Flashrex/BugTracker"
     },
     {
         headline: "Steam Market Tracker",
