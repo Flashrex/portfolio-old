@@ -35,7 +35,7 @@ function addItemToDomTree(item) {
 }
 
 
-/* Suche nach Tag */
+/* Suche nach Name/Tag */
 function onSearchInput() {
     if(projects === undefined) return;
 
