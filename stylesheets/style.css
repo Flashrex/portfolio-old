@@ -362,18 +362,18 @@ a:hover {
     justify-content: space-between;
     padding: 0 1rem 1rem 2rem;
     letter-spacing: 0.5px;
-    vertical-align: bottom;
 }
 
-.item h3 {
+.item-info > h3 {
     margin: 3vh 0 2vh 0;
 }
 
-.item p {
-    margin: 0vh 0 2vh 0;
+.item-info > p {
+    margin: 0 0 2vh 0;
+    
 }
 
-.btn_container  {
+.btn-container  {
     display: flex;
     position: relative;
     width: 100%;
@@ -398,8 +398,48 @@ a:hover {
     transition: 0.25s ease;
 }
 
+.tag-container  {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: var(--font-highlight-green);
+    color: var(--font-darkmode-white);
+    padding: 4px 12px;
+    margin: 2px;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
 .button:hover {
     cursor: pointer;
+}
+
+.inputfield {
+    width: 100%;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.text-input {
+    color: rgb(218, 216, 216);
+    font-weight: bold;
+    background-color: #212121;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: none;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 3px;
+}
+
+
+.text-input:focus {
+    outline: var(--font-highlight-green) solid 2px;
 }
 
 /*** contacts.html ***/
