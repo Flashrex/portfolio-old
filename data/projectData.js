@@ -65,7 +65,7 @@ var projects = [
     },
     {
         headline: "Rage:MP Youtube Tutorial Serie",
-        description: "Rage:Multiplayer API Kurs. <br><br>>60.000 Youtube Aufrufe<br>~800 Discord Mitglieder<br>(stand 06.2022)",
+        description: "Rage:Multiplayer API Kurs. <br><br>>90.000 Youtube Aufrufe<br>~800 Discord Mitglieder<br>(stand 06.2022)",
         tags: ["c#", "html", "css", "javascript", "gtav", "ragemp", "discord", "2020"],
         image_url: "images/ragemp.png",
         file: "",
@@ -73,7 +73,7 @@ var projects = [
     },
     {
         headline: "alt:V Youtube Tutorial Serie",
-        description: "alt:V API Kurs.<br><br>>90.000 Youtube Aufrufe<br>~800 Discord Mitglieder<br>(stand 06.2022)",
+        description: "alt:V API Kurs.<br><br>>60.000 Youtube Aufrufe<br>~800 Discord Mitglieder<br>(stand 06.2022)",
         tags: ["c#", "html", "css", "javascript", "gtav", "alt:V", "2021"],
         image_url: "images/altv.png",
         file: "",
