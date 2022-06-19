@@ -104,13 +104,11 @@ function onUserDeclinedCookies() {
 /* Darkmode */
 function toggleDarkMode() {
     darkmode = !darkmode;
-    //document.cookie = `darkmode=${darkmode};SameSite=None;secure`;
     setCookie('darkmode', darkmode, 30);
     applyDarkmode();
 }
 
 function applyDarkmode() {
-    //console.log("Cookie: " +getCookie('darkmode') +", darkmode: " +darkmode);
 
     document.querySelectorAll(darkmode ? ".bg-light" : ".bg-dark").forEach(e => {
         e.classList.add(darkmode ? "bg-dark" : "bg-light");
