@@ -7,8 +7,6 @@ if(projects !== undefined) {
 }
 
 function addItemToDomTree(item) {
-
-
     const elem = document.createElement("div");
     elem.classList.add("item");
     elem.classList.add(darkmode ? "bg-dark-contrast" : "bg-light-contrast");

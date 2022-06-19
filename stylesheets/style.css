@@ -427,14 +427,19 @@ a:hover {
 }
 
 .text-input {
-    color: rgb(218, 216, 216);
     font-weight: bold;
-    background-color: #212121;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border: none;
     width: 50%;
     margin-left: 25%;
     border-radius: 3px;
+}
+
+@media(max-width: 854px) {
+    .text-input {
+        width: 60%;
+        margin-left: 15%;
+    }
 }
 
 
