@@ -103,13 +103,15 @@ a:hover {
 .content {
     position: absolute;
     left: 20%;
-    top: 0;
+    top: 10%;
     width: 60%;
     height: 100%;
 }
 
 .navbar {
-    width: 100%;
+    position: absolute;
+    width: 60%;
+    left: 20%;
     display: flex;
     align-items: center;
     margin-top: 2vh;
@@ -329,18 +331,18 @@ a:hover {
 /*** projects.html ***/
 .content-projects {
     position: absolute;
-    left: 15%;
-    top: 0;
+    left: 10%;
+    top: 10%;
     width: 80%;
-    height: 100%;
 }
 
 
 .projects-section {
+    width: auto;
     margin: 1rem;
     display: flex;
     flex-wrap: wrap;
-    max-height: 95vh;
+    justify-content: center;
 }
 
 .item {
@@ -437,18 +439,17 @@ a:hover {
     font-weight: bold;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border: none;
-    width: 50%;
-    margin-left: 25%;
+    width: 60%;
+    margin-left: 18%;
     border-radius: 3px;
 }
 
-@media(max-width: 854px) {
+@media(max-width: 854px) { 
     .text-input {
-        width: 60%;
-        margin-left: 15%;
+        width: 80%;
+        margin-left: 5%;
     }
 }
-
 
 .text-input:focus {
     outline: var(--font-highlight-green) solid 2px;
