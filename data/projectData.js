@@ -29,7 +29,7 @@ var projects = [
         languages: "Javascript",
         image_url: "images/gameoflife.png",
         file: "projects/games/gameoflife/index.html",
-        repository: "https://github.com/Flashrex"
+        repository: "https://github.com/Flashrex/flashrex.github.io/tree/master/projects/games/gameoflife"
     },
     {
         headline: "Pong!",
@@ -37,7 +37,7 @@ var projects = [
         languages: "Javascript",
         image_url: "images/pong.png",
         file: "projects/games/pong/index.html",
-        repository: "https://github.com/Flashrex"
+        repository: "https://github.com/Flashrex/flashrex.github.io/tree/master/projects/games/pong"
     },
     {
         headline: "Sorting Algorithm Visualization",
@@ -45,7 +45,7 @@ var projects = [
         languages: "Javascript",
         image_url: "images/sorting.png",
         file: "projects/sorting/index.html",
-        repository: "https://github.com/Flashrex/"
+        repository: "https://github.com/Flashrex/flashrex.github.io/tree/master/projects/sorting"
     },
     {
         headline: "VR-Suit",
@@ -53,6 +53,6 @@ var projects = [
         languages: "Html, Css, Js",
         image_url: "projects/vr_suit/images/logo.png",
         file: "projects/vr_suit/index.html",
-        repository: "https://github.com/Flashrex/"
+        repository: "https://github.com/Flashrex/flashrex.github.io/tree/master/projects/vr_suit"
     }
 ]
