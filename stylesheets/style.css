@@ -493,11 +493,19 @@ a:hover {
     padding: .5rem 0 .5rem 0.2rem;
 }
 
+.email-form-container form input:focus {
+    outline: var(--font-highlight-green) solid 2px;
+}
+
 .email-form-container form textarea {
     width: 80%;
     margin: 0.5rem;
     margin-left: 5%;
     padding: .5rem 0 8rem 0.2rem;
+}
+
+.email-form-container form textarea:focus {
+    outline: var(--font-highlight-green) solid 2px;
 }
 
 .email-form-container form button {
