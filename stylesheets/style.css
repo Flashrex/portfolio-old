@@ -336,6 +336,12 @@ a:hover {
     width: 80%;
 }
 
+@media(max-width: 854px) {
+    .content-projects {
+        top: 15%;
+    }
+}
+
 
 .projects-section {
     width: auto;
