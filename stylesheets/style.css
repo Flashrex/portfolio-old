@@ -377,7 +377,7 @@ a:hover {
 
 .item-info > p {
     margin: 0 0 2vh 0;
-    
+    font-size: 1rem;
 }
 
 .btn-container  {

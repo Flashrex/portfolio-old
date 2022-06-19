@@ -18,6 +18,8 @@ function addItemToDomTree(item) {
         tags += `<div class="tag">${item.tags[i]}</div>`;
     }
 
+    
+
     elem.innerHTML = `
         <img src="${item.image_url}" alt=img_${item.headline}>
         <div class="item-info ${fontcolor}">
