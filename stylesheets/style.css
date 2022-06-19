@@ -508,3 +508,18 @@ a:hover {
     transition: 0.25s ease;
     font-weight: bold;
 }
+
+/* date.html */
+.date-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.text-huge {
+    font-size: 4.2rem;
+    margin: 0;
+}
