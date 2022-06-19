@@ -9,3 +9,10 @@ main {
 canvas {
     margin-top: 1vh;
 }
+
+.credits {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0;
+}

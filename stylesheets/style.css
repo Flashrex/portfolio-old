@@ -54,6 +54,20 @@ body {
     user-select: none;
 }
 
+.cookieDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgb(20, 20, 20);
+}
+
 a {
     text-decoration: none;
     transition: 0.25s ease;
@@ -375,6 +389,7 @@ a:hover {
     border: 1px solid #149e52;
     border-radius: 5px;
     font-weight: bold;
+    margin: 1rem;
 }
 
 .button a {
@@ -398,7 +413,6 @@ a:hover {
     text-align: center;
     border-radius: 5px;
     box-shadow: 4px 4px 10px rgb(20, 20, 20);
-    overflow-x: scroll;
     transition: 1s background-color;
 }
 
