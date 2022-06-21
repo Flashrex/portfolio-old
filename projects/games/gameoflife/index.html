@@ -14,7 +14,7 @@
     <body class="bg-dark">
         <div class="navbar">
             <div class="navbar-logo">
-                <span class="headline-text font-darkmode-white">Flashrex's Website</span>
+                <a class="headline-text font-darkmode-white" href="../../../index.html">Flashrex's Website</a>
             </div>
             <div class="vertical-seperator"></div>
             <div class="navbar-items">
@@ -48,6 +48,10 @@
                         <input type="button" value="↪ Next" onclick="nextGeneration()">
                         <input type="button" value="Populate" onclick="regenerate()">
                         <input type="button" value="Toggle Grid" onclick="toggleGrid()">
+                        <div>
+                            <label for="speed_range" class="font-darkmode-white">Speed</label>
+                            <input id="speed_range" type="range" value="1" min="0" max="9" oninput="changeUpdateSpeed()">
+                        </div>
                     </div>
                 </div>
             </div>
