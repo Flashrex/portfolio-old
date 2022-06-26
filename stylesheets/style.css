@@ -69,7 +69,7 @@ body {
     box-shadow: 4px 4px 10px rgb(20, 20, 20);
 }
 
-@media(max-width: 854px) { 
+@media(max-width: 40em) { 
     .cookieDiv {
         width: 80%;
         height: auto;
@@ -112,7 +112,7 @@ a:hover {
     flex-direction: column;
 }
 
-@media(max-width: 854px) { 
+@media(max-width: 40em) { 
     .content {
         left: 10%;
         width: 80%;
@@ -138,7 +138,7 @@ a:hover {
     margin-top: 2vh;
 }
 
-@media(max-width: 854px) { 
+@media(max-width: 40em) { 
     .navbar {
         width: 90%;
         left: 5%;
@@ -174,7 +174,7 @@ a:hover {
     margin: 1vw;
 }
 
-@media(max-width: 854px) { 
+@media(max-width: 40em) { 
     .header-list {
         width: 100px;
         padding: 0;
@@ -231,9 +231,10 @@ a:hover {
     padding-top: 8vh;
     display: inline-flex;
     justify-content: center;
+    padding-bottom: 4rem;
 }
 
-@media(max-width: 854px) { 
+@media(max-width: 40em) { 
     .aboutme-section {
         display: block;
         margin-left: 0;
@@ -243,7 +244,7 @@ a:hover {
 .image-container {
     position: relative;
     background-image: url("../images/ente.jpg");
-    width: 300px;
+    min-width: 300px;
     height: 700px;
     box-shadow: 4px 4px 10px rgb(20, 20, 20);
 }
@@ -291,9 +292,8 @@ a:hover {
 
 .text-container {
     position: relative;
-    margin-top: 50px;
-    width: 0px;
-    height: 600px;
+    margin-top: 25px;
+    height: 650px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     box-shadow: 4px 4px 10px rgb(20, 20, 20);
@@ -315,7 +315,19 @@ a:hover {
     }
 }
 
-@media(max-width: 854px) { 
+@media(max-width: 40em) { 
+    @keyframes widthAnimation {
+        0% {
+            width: 0;
+            overflow: hidden;
+        }
+        100% {
+            width: 300px;
+            overflow: auto;
+        }
+    }
+    
+
     .text-container {
         width: 300px;
     }
@@ -326,7 +338,7 @@ a:hover {
     margin-top: 4vh;
 }
 
-@media(max-width: 854px) { 
+@media(max-width: 40em) { 
     #headline {
         padding-top: 4vh;
     }
@@ -355,7 +367,7 @@ a:hover {
     font-weight: 600;
 }
 
-@media(max-width: 854px) {
+@media(max-width: 40em) {
     #bio {
         font-size: 0.9rem;
     }
@@ -364,26 +376,19 @@ a:hover {
 /*** projects.html ***/
 .project-section {
     position: relative;
-    left: 5%;
-    width: 90%;
-    margin-top: 4rem;
-}
-
-@media(max-width: 854px) { 
-    .project-section {
-        left: 0;
-    }
+    width: 100%;
+    padding-bottom: 8rem;
 }
 
 .projects-container {
-    width: auto;
+    width: 100%;
     margin: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-@media(max-width: 854px) { 
+@media(max-width: 40em) { 
     .projects-container {
         margin: 0;
     }
@@ -393,14 +398,8 @@ a:hover {
     margin: 1rem;
     border-radius: 3px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-    width: 30%;
+    width: 300px;
     transition: transform 0.4s;
-}
-
-@media(max-width: 854px) { 
-    .item {
-        width: 100%;
-    }
 }
 
 .item:hover {
@@ -494,7 +493,7 @@ a:hover {
     border-radius: 3px;
 }
 
-@media(max-width: 854px) { 
+@media(max-width: 40em) { 
     .text-input {
         width: 100%;
     }
@@ -510,12 +509,10 @@ a:hover {
     position: relative;
     width: 90%;
     left: 5%;
-    margin-top: 16vh;
-    padding-top: 8vh;
     padding-bottom: 8vh;
 }
 
-@media(max-width: 854px) { 
+@media(max-width: 40em) { 
     .contact-section {
         left: 0;
     }
@@ -530,7 +527,7 @@ a:hover {
     transition: background-color 0.5s;
 }
 
-@media(max-width: 854px) { 
+@media(max-width: 40em) { 
     .email-form-container {
         margin-left: 0;
         width: 300px;

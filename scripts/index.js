@@ -8,10 +8,10 @@ document.addEventListener('scroll', (e) => {
     
     console.log({scrollY: window.scrollY, min: aboutSection.scrollHeight, max: projectSection.scrollHeight - contactSection.scrollHeight})
 
-    if(window.scrollY < aboutSection.scrollHeight) {
+    if(window.scrollY < aboutSection.scrollHeight-50) {
         underlineHeaderElement(0);
     }
-    else if(window.scrollY >= aboutSection.scrollHeight && window.scrollY <= projectSection.scrollHeight - contactSection.scrollHeight) {
+    else if(window.scrollY >= aboutSection.scrollHeight-50 && window.scrollY <= projectSection.scrollHeight - contactSection.scrollHeight) {
         underlineHeaderElement(1);
     } 
     else if(window.scrollY >= projectSection.scrollHeight && window.scrollY <= document.documentElement.scrollHeight - contactSection.scrollHeight) {
