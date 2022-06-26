@@ -52,6 +52,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     user-select: none;
+    margin: 0;
 }
 
 .cookieDiv {
@@ -77,7 +78,7 @@ body {
 
 a {
     text-decoration: none;
-    transition: 0.25s ease;
+    transition: color 0.25s ease;
 }
 
 a:hover {
@@ -101,21 +102,49 @@ a:hover {
 }
 
 .content {
+    /* background-color: red; */
     position: absolute;
     left: 20%;
     top: 10%;
     width: 60%;
-    height: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width: 854px) { 
+    .content {
+        left: 10%;
+        width: 80%;
+    }
+}
+
+.top-section {
+    margin-top: 0;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    padding-bottom: 1rem;
+    box-shadow: 4px 4px 10px rgb(20, 20, 20);
 }
 
 .navbar {
-    position: absolute;
-    width: 60%;
-    left: 20%;
+    position: relative;
+    width: 50%;
+    left: 25%;
     display: flex;
     align-items: center;
     margin-top: 2vh;
 }
+
+@media(max-width: 854px) { 
+    .navbar {
+        width: 90%;
+        left: 5%;
+    }
+}
+
 
 .navbar-logo {
     margin-left: 1vw;
@@ -197,13 +226,17 @@ a:hover {
 
 /* About me Section */
 .aboutme-section {
-    margin-top: 8vh;
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 8vh;
     display: inline-flex;
+    justify-content: center;
 }
 
 @media(max-width: 854px) { 
     .aboutme-section {
         display: block;
+        margin-left: 0;
     }
 }
 
@@ -229,7 +262,7 @@ a:hover {
     vertical-align: top;
     display: inline-block;
     margin: 0 0.5vw;
-    transition: 0.2s;
+    transition: transform 0.2s;
 }
 
 .social-icon:hover {
@@ -265,7 +298,7 @@ a:hover {
     border-bottom-right-radius: 5px;
     box-shadow: 4px 4px 10px rgb(20, 20, 20);
     letter-spacing: 0.5px;
-    transition: 1s all;
+    transition: width 1s;
     animation: widthAnimation ease-in-out 1s;
     width: 650px;
     overflow: auto;
@@ -329,21 +362,20 @@ a:hover {
 }
 
 /*** projects.html ***/
-.content-projects {
-    position: absolute;
-    left: 10%;
-    top: 10%;
-    width: 80%;
+.project-section {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    margin-top: 4rem;
 }
 
-@media(max-width: 854px) {
-    .content-projects {
-        top: 15%;
+@media(max-width: 854px) { 
+    .project-section {
+        left: 0;
     }
 }
 
-
-.projects-section {
+.projects-container {
     width: auto;
     margin: 1rem;
     display: flex;
@@ -351,12 +383,24 @@ a:hover {
     justify-content: center;
 }
 
+@media(max-width: 854px) { 
+    .projects-container {
+        margin: 0;
+    }
+}
+
 .item {
     margin: 1rem;
     border-radius: 3px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    transition: 0.4s all;
+    width: 30%;
+    transition: transform 0.4s;
+}
+
+@media(max-width: 854px) { 
+    .item {
+        width: 100%;
+    }
 }
 
 .item:hover {
@@ -410,7 +454,7 @@ a:hover {
 .button a {
     color: white;
     text-decoration: none;
-    transition: 0.25s ease;
+    /* transition:  0.25s ease; */
 }
 
 .tag-container  {
@@ -439,6 +483,7 @@ a:hover {
     width: 100%;
     display: flex;
     margin-top: 2rem;
+    justify-content: center;
 }
 
 .text-input {
@@ -446,14 +491,12 @@ a:hover {
     padding: 0.5rem 1rem 0.5rem 1rem;
     border: none;
     width: 60%;
-    margin-left: 18%;
     border-radius: 3px;
 }
 
 @media(max-width: 854px) { 
     .text-input {
-        width: 80%;
-        margin-left: 5%;
+        width: 100%;
     }
 }
 
@@ -463,27 +506,39 @@ a:hover {
 
 /*** contacts.html ***/
 
+.contact-section {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    margin-top: 16vh;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+}
+
+@media(max-width: 854px) { 
+    .contact-section {
+        left: 0;
+    }
+}
+
 .email-form-container {
-    position: absolute;
-    margin-top: 8vh;
-    width: 600px;
-    left: 20%;
-    height: 600px;
+    width: 80%;
+    margin-left: 10%;
     text-align: center;
     border-radius: 5px;
     box-shadow: 4px 4px 10px rgb(20, 20, 20);
-    transition: 1s background-color;
+    transition: background-color 0.5s;
 }
 
 @media(max-width: 854px) { 
     .email-form-container {
-        left: 0;
+        margin-left: 0;
         width: 300px;
     }
 }
 
-.email-form-container h3 {
-    margin-top: 2rem;
+.email-form-container>h3 {
+    padding-top: 2rem;
 }
 
 .email-form-container form {
@@ -520,14 +575,14 @@ a:hover {
     /* border-radius: 5px;
     color: var(--font-darkmode-grey); */
     padding: 0.4rem 2rem 0.4rem 2rem;
-    transition: 0.25s ease;
+    /* transition: 0.25s ease; */
     font-weight: bold;
 }
 
 /* date.html */
 .date-section {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;

@@ -56,6 +56,7 @@ class Game {
         this.paused = true;
         this.drawNext = false;
         this.currentGeneration = 0;
+        this.updateTime = 100;
 
         this.initialize();
 
@@ -109,7 +110,7 @@ class Game {
 
         setTimeout(() => {
             window.requestAnimationFrame(() => this.update(false));
-        }, 100);
+        }, this.updateTime);
     }
 
     updateCells() {
@@ -258,4 +259,9 @@ function toggleGrid() {
 
 function logGrid() {
     console.log(JSON.stringify(game.gameObjects));
+}
+
+function changeUpdateSpeed() {
+    let speedMultiplier = document.querySelector("#speed_range").value;
+    game.updateTime = Math.floor(1000 - (speedMultiplier * 100));
 }
