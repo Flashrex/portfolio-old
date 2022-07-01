@@ -26,7 +26,7 @@ var projects = [
     {
         headline: "Conway's Game of Life",
         description: "Der Klassiker Game of Life von John Horton Conway.",
-        tags: ["javascript", "2021"],
+        tags: ["javascript", "2021", "games"],
         image_url: "images/gameoflife.png",
         file: "projects/games/gameoflife/index.html",
         repository: "https://github.com/Flashrex/flashrex.github.io/tree/master/projects/games/gameoflife"
@@ -34,7 +34,7 @@ var projects = [
     {
         headline: "Pong!",
         description: "Der Urvater der modernen Videospiele aus dem Jahre 1972.<br>Enthält 2-Spieler Modus.",
-        tags: ["javascript", "2020"],
+        tags: ["javascript", "2020", "games"],
         image_url: "images/pong.png",
         file: "projects/games/pong/index.html",
         repository: "https://github.com/Flashrex/flashrex.github.io/tree/master/projects/games/pong"
@@ -50,7 +50,7 @@ var projects = [
     {
         headline: "Pokequiz",
         description: "Stelle dein Wissen über Pokemon unter Beweis!",
-        tags: ["html", "css", "javascript", "2022"],
+        tags: ["html", "css", "javascript", "2022", "games"],
         image_url: "images/pokeball.png",
         file: "projects/games/pokequiz/index.html",
         repository: "https://github.com/Flashrex/flashrex.github.io/tree/master/projects/games/pokequiz"
