@@ -386,6 +386,8 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-height: 160rem;
+    overflow: scroll;
 }
 
 @media(max-width: 40em) { 
