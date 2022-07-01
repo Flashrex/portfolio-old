@@ -102,7 +102,7 @@ a:hover {
 }
 
 .content {
-    background-color: red;
+    /* background-color: red; */
     position: absolute;
     left: 20%;
     top: 10%;
