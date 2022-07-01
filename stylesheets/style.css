@@ -11,6 +11,7 @@
     --font-darkmode-grey: #8f8f8f;
     --font-lightmode-grey: #8f8f8f;
     --font-highlight-green: #149e52;
+    --bg-red: #a33e3e;
 }
 
 .bg-dark {
@@ -47,6 +48,10 @@
 
 .font-highlight {
     color: var(--font-highlight-green);
+}
+
+.centered {
+    text-align: center;
 }
 
 body {
@@ -452,6 +457,17 @@ a:hover {
     margin: 1rem;
 }
 
+.button-cancel  {
+    border: none;
+    background-color: var(--bg-red);
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--bg-red);
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 1rem;
+}
+
 .button a {
     color: white;
     text-decoration: none;
@@ -476,7 +492,7 @@ a:hover {
     font-size: 0.8rem;
 }
 
-.button:hover {
+.button:hover, .button-cancel:hover {
     cursor: pointer;
 }
 

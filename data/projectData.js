@@ -48,6 +48,14 @@ var projects = [
         repository: "https://github.com/Flashrex/flashrex.github.io/tree/master/projects/sorting"
     },
     {
+        headline: "Pokequiz",
+        description: "Stelle dein Wissen über Pokemon unter Beweis!",
+        tags: ["html", "css", "javascript", "2022"],
+        image_url: "images/pokeball.png",
+        file: "projects/games/pokequiz/index.html",
+        repository: "https://github.com/Flashrex/flashrex.github.io/tree/master/projects/games/pokequiz"
+    },
+    {
         headline: "VR-Suit",
         description: "Meine erste eigene kleine Website für ein Schulprojekt.",
         tags: ["html", "css", "javascript", "2018"],

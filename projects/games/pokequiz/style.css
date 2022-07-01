@@ -1,101 +1,99 @@
 .pokebox {
-    position: absolute;
-    background-color: white;
-    left: 20%;
-    top: 120px;
-    width: 60%;
-    min-height: 700px;
+    margin-top: 4rem;
+}
+
+.poke-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pokemon-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#timer {
+    margin-left: 2rem;
+    font-weight: bold;
+}
+
+#points {
+    margin-right: 2rem;
+    font-weight: bold;
+}
+
+.poke-input {
+    align-items: center;
+    margin: 1rem;
+}
+
+
+
+.poke-input > label {
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.poke-input > input {
+    border: none;
+    padding: 0.5rem 0.75rem;
     border-radius: 5px;
 }
 
-.head {
-    position: relative;
-    padding: 0.4em;
-    margin: 0.5em;
-    border-radius: 5px;
-    background-color: rgb(231, 195, 195);
-    text-align: center;
-    min-height: 3em;
+.poke-input > input:focus {
+    outline: var(--font-highlight-green) solid 2px;
 }
 
-#playbutton {
-    padding: 0.4em 1em;
-    background-color: rgb(233, 92, 92);
-    color: white;
-    font-weight: bolder;
-    font-size: 1vw;
-    margin-top: 0.2em;
-}
-
-#playbutton:hover {
-    cursor: pointer;
-    background-color: rgb(187, 75, 75);
-}
-
-.head .input {
-    text-align: center;
-}
-
-.head label {
-    font-size: 1vw;
-    font-weight: bolder;
-    margin-left: 0.5em;
-}
-
-.head input {
-    padding: 0.25em;
-    border: none;
-    border-radius: 4px;
-}
-
-.head .button {
-    margin: 0.5em;
-    border: none;
-    border-radius: 4px;
-    padding: 0.25em 1.5em;
-    background-color: rgb(233, 92, 92);
-}
-
-.head .button:hover {
-    cursor: pointer;
-    background-color: rgb(187, 75, 75);
-}
-
-.head span {
-    position: relative;
-    float: left;
-    margin-top: 0.2em;
-    padding: 0.1em;
-    font-size: 1.5vw;
-    font-weight: bolder;
-    user-select: none;
-}
-
-.head #points {
-    position: relative;
-    float: right;
-    margin: 0.3em;
-    margin-top: 0.5em;
-    font-size: 1vw;
-    font-weight: bolder;
-    user-select: none;
-}
-
-:root {
-    --grid-cols: 1;
-    --grid-rows: 1;
-}
-  
-#container {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
-    padding: 0.2em;
-}
-  
-.grid-item {
-    padding: 0.5em;
-    border: 1px solid #ddd;
+.poke-field {
+    margin: 0.5rem;
+    width: 250px;
     text-align: left;
+    min-height: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.failed {
+    color: var(--bg-red);
+}
+
+.finished {
+    color: var(--font-highlight-green);
+}
+
+.footer {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+@media(max-width: 60em) { 
+    .poke-header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #timer {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+    
+    #points {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .poke-input {
+        flex-direction: column;
+        
+    }
+
+    .poke-input > label {
+        margin-bottom: 1rem;
+    }
 }
