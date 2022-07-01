@@ -6,7 +6,7 @@ const headerItems = document.querySelector('.header-list');
 
 document.addEventListener('scroll', (e) => {
     
-    console.log({scrollY: window.scrollY, min: aboutSection.scrollHeight, max: projectSection.scrollHeight - contactSection.scrollHeight})
+    //console.log({scrollY: window.scrollY, min: aboutSection.scrollHeight, max: projectSection.scrollHeight - contactSection.scrollHeight})
 
     if(window.scrollY < aboutSection.scrollHeight-50) {
         underlineHeaderElement(0);
