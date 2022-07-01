@@ -1,5 +1,8 @@
 .pokebox {
     margin-top: 4rem;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgb(20, 20, 20);
+    margin-bottom: 4rem;
 }
 
 .poke-header {
