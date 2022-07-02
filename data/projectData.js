@@ -65,7 +65,7 @@ var projects = [
     },
     {
         headline: "GTA RP Voice",
-        description: "Voice Script Ressource für alt:V Multiplayer.",
+        description: "Voice Script Ressource für alt:V Multiplayer.<br>Fügt einen 3D-Voice Chat, Custom Voice Channels sowie ein Funkgerät hinzu.",
         tags: ["c#", "html", "css", "javascript", "gtav", "alt:V", "2021"],
         image_url: "images/altvoice.png",
         file: "",
