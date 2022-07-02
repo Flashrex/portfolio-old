@@ -55,8 +55,6 @@ class PokeGame {
 
             if(seconds >= this.maxTime) {
                 //time has ended
-                clearInterval(this.timer);
-                this.timer = undefined;
                 this.end();
             }
         }, 1000);
