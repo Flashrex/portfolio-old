@@ -3,7 +3,7 @@ main {
 }
 
 .project-headline {
-    margin-top: 12vh;
+    margin-top: 6vh;
 }
 
 canvas {
@@ -15,4 +15,5 @@ canvas {
     left: 50%;
     transform: translate(-50%);
     margin: 0;
+    bottom: -25px;
 }
