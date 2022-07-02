@@ -265,3 +265,10 @@ function changeUpdateSpeed() {
     let speedMultiplier = document.querySelector("#speed_range").value;
     game.updateTime = Math.floor(1000 - (speedMultiplier * 100));
 }
+
+/* Tooltip */
+function rangeValFunc(rangeVal){
+    const tooltip = document.getElementById("tooltiptext");
+    tooltip.innerHTML = `${parseInt(rangeVal) + 1}/s`;
+    tooltip.style.left = `${40 + (rangeVal * 5)}%`;
+}

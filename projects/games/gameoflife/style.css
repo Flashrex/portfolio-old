@@ -6,12 +6,11 @@ body {
 
 .gol_container {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     display: inline-flex;
 }
 
 .content {
-    margin-top: 4%;
     text-align: center;
 }
 
@@ -20,7 +19,7 @@ body {
     margin-top: 1vh;
 }
 
-input {
+.buttons > input {
     color: white;
     border: none;
     padding: .8vh .8vw .8vh .8vw;
@@ -42,4 +41,91 @@ input {
 
 input:hover{
     filter: brightness(85%);;
+}
+
+.input-range {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.input-range > label{
+    margin-right: .5rem;
+}
+
+
+input[type="range"]{
+    -webkit-appearance: none;
+    width: 50%;
+    height: 8px;
+    border-radius: 5px;
+}
+
+/* Chrome */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 9px;
+    height: 9px;
+    background: var(--font-highlight-green);
+    cursor: pointer;
+    border-radius:30px;
+    outline:none;
+}
+  
+/* Moz */
+  
+input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: var(--font-darkmode-white);
+    cursor: pointer;
+    border-radius:50%;
+    border:none;
+    outline:none;
+}
+  
+input[type="range"]::-moz-range-progress {
+    background-color: var(--font-highlight-green);
+    height: 100%;
+    border-radius:30px;
+    border:none;
+}
+  
+input[type="range"]::-moz-range-track {  
+    background-color: var(--bg-dark-contrast);
+    border-radius:30px;
+    border:none;
+    height: 100%;
+}
+
+/* tooltip style */
+.tooltiptext {
+    visibility: hidden;
+    background-color: var(--font-highlight-green);
+    color: #fff;
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    left: 40%;
+}
+  
+.input-range:hover .tooltiptext {
+    visibility: visible;
+}
+  
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #f38080 transparent transparent transparent;
 }

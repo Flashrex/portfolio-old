@@ -20,14 +20,14 @@
             <div class="navbar-items">
                 <ul class="header-list">
                     <li class="list-item"><a class="font-darkmode-white" href="../../../index.html" >Über mich</a></li>
-                    <li class="list-item"><a class="underlined font-darkmode-white" href="../../../projects.html" >Projekte</a></li>
-                    <li class="list-item"><a class="font-darkmode-white" href="../../../contact.html">Kontakt</a></li>
+                    <li class="list-item"><a class="underlined font-darkmode-white" href="../../../index.html" >Projekte</a></li>
+                    <li class="list-item"><a class="font-darkmode-white" href="../../../index.html">Kontakt</a></li>
                 </ul>
             </div>
             <img class="darkmode-icon cursor-pointer svg-color-light" id="dm-icon" src="images/sun.svg" style="width: 20px; height: 20px;" onclick="toggleDarkMode()">
         </div>
 
-        <div class="content-projects">
+        <div class="content">
             <div class="gol_container">
                 <canvas id="canvas" width="800" height="800" style="border:1px solid lightgrey;">
                     Your browser does not support the HTML5 canvas tag.
@@ -48,16 +48,14 @@
                         <input type="button" value="↪ Next" onclick="nextGeneration()">
                         <input type="button" value="Populate" onclick="regenerate()">
                         <input type="button" value="Toggle Grid" onclick="toggleGrid()">
-                        <div>
-                            <label for="speed_range" class="font-darkmode-white">Speed</label>
-                            <input id="speed_range" type="range" value="1" min="0" max="9" oninput="changeUpdateSpeed()">
-                        </div>
+                    </div>
+                    <div class="input-range">
+                        <span class="tooltiptext" id="tooltiptext">1/s</span>
+                        <label for="speed_range" class="font-darkmode-white">Geschwindigkeit</label>
+                        <input id="speed_range" type="range" value="1" min="0" max="9" oninput="changeUpdateSpeed()" onchange="rangeValFunc(this.value);">
                     </div>
                 </div>
             </div>
-            
-
-            <section class="projects-section" id="project_container"></section>
         </div>
         
 
