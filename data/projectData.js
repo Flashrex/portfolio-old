@@ -10,18 +10,18 @@ var projects = [
     {
         headline: "Bugtracker",
         description: "App um Bugs oder Tasks innerhalb eines Projekts zu tracken.",
-        tags: ["typescript", "nodejs", "express", "2022"],
+        tags: ["typescript", "nodejs", "express", "2022", "unfinished"],
         image_url: "images/bugtracker.png",
         file: "",
-        repository: "https://github.com/Flashrex/BugTracker"
+        repository: ""
     },
     {
         headline: "Steam Market Tracker",
         description: "Tracke Preise von CS:GO Items auf dem Steam Community Market Place.",
-        tags: ["nodejs", "javascript", "html", "css", "express", `"steamapi"`, "2022"],
+        tags: ["nodejs", "javascript", "html", "css", "express", `"steamapi"`, "2022", "unfinished"],
         image_url: "images/steammarkettracker.png",
         file: "",
-        repository: "https://github.com/Flashrex/"
+        repository: ""
     },
     {
         headline: "Conway's Game of Life",

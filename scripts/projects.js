@@ -27,8 +27,8 @@ function addItemToDomTree(item) {
             <p>${item.description}</p>
             <div class="tag-container">${tags}</div>
             <div class="btn-container">
-                ${item.file !== "" ? `<button class="button"><a href=${item.file}>Try Out</a></button>` : ``}
-                ${item.repository.includes("github") ? '<button class="button"><a href="' +item.repository +'" target="_blank">Show Code</a></button>' : '<button class="button"><a href="' +item.repository +'" target="_blank">Open on Gitlab</a></button>'}
+                ${item.file !== "" ? `<a class="button" href=${item.file}>Try Out</a>` : ``}
+                ${item.repository.includes("github") ? '<a class="button" href="' +item.repository +'" target="_blank">Show Code</a>' : '<a class="button disabled" href="#" onclick="return false;">Show Code</a>'}
             </div>
         </div>
     `;

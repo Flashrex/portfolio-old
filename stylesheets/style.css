@@ -6,7 +6,7 @@
     --bg-light: #f1f1f1;
     --bg-contrast: #141414;
     --bg-contrast-light: #bdbdbd;
-    --font-darkmode-white: #DEDEDE;
+    --font-darkmode-white: #eeeeee;
     --font-lightmode-black: #111;
     --font-darkmode-grey: #8f8f8f;
     --font-lightmode-grey: #8f8f8f;
@@ -81,12 +81,12 @@ body {
     }
 }
 
-a {
+li > a {
     text-decoration: none;
     transition: color 0.25s ease;
 }
 
-a:hover {
+li> a:hover {
     cursor: pointer;
     color: var(--font-highlight-green);
 }
@@ -447,33 +447,37 @@ a:hover {
 }
 
 .button  {
+    text-decoration: none;
     border: none;
+    color: var(--font-darkmode-white);
     background-color: var(--font-highlight-green);
-    color: white;
+
     padding: 0.5rem 0.75rem;
-    border: 1px solid #149e52;
     border-radius: 5px;
-    font-weight: bold;
     margin: 1rem;
     box-shadow: 4px 4px 10px rgb(20, 20, 20);
-}
-
-.button-cancel  {
-    border: none;
-    background-color: var(--bg-red);
-    color: white;
-    padding: 0.5rem 0.75rem;
-    border: 1px solid var(--bg-red);
-    border-radius: 5px;
     font-weight: bold;
-    margin: 1rem;
+    font-size: small;
 }
 
-.button a {
-    color: white;
-    text-decoration: none;
-    /* transition:  0.25s ease; */
+.button.cancel {
+    background-color: var(--bg-red);
 }
+
+.button.disabled {
+    background-color: var(--bg-dark);
+    color: rgb(54, 54, 54);
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button.disabled:hover {
+    cursor: default;
+}
+
+
 
 .tag-container  {
     position: relative;
@@ -491,10 +495,6 @@ a:hover {
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
     font-weight: bold;
     font-size: 0.8rem;
-}
-
-.button:hover, .button-cancel:hover {
-    cursor: pointer;
 }
 
 .inputfield {
