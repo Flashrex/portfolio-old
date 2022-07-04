@@ -81,12 +81,12 @@ body {
     }
 }
 
-li > a {
+.hyperlink {
     text-decoration: none;
     transition: color 0.25s ease;
 }
 
-li> a:hover {
+.hyperlink:hover {
     cursor: pointer;
     color: var(--font-highlight-green);
 }
