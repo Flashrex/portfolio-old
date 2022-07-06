@@ -20,11 +20,11 @@ function formatDate(dateInMs) {
     let months = Math.floor(days/30.5);
     let years = Math.floor(months/12);
 
-    seconds = seconds % 60;
-    minutes = minutes % 60;
-    hours = hours % 24;
-    days = days % 30.5;
-    months = months % 12;
+    seconds = Math.floor(seconds % 60);
+    minutes = Math.floor(minutes % 60);
+    hours = Math.floor(hours % 24);
+    days = Math.floor(days % 30.5);
+    months = Math.floor(months % 12);
 
     //1 Jahr 2 Monate 21 Tage 7 Stunden 43 Minuten x Sekunden
     return `${years} ${years > 1 ? "Jahre" : "Jahr"} ${months} ${months > 1 ? "Monate" : "Monat"} ${days} ${days > 1 ? "Tage" : "Tag"} ${hours} ${hours > 1 ? "Stunden" : "Stunde"} ${minutes} ${minutes > 1 ? "Minuten" : "Minute"} ${seconds} ${seconds > 1 ? "Sekunden" : "Sekunde"}`;
