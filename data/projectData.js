@@ -8,22 +8,6 @@ var projects = [
         repository: "https://github.com/Flashrex/Website"
     },
     {
-        headline: "Bugtracker",
-        description: "App um Bugs oder Tasks innerhalb eines Projekts zu tracken.",
-        tags: ["typescript", "nodejs", "express", "2022", "unfinished"],
-        image_url: "images/bugtracker.png",
-        file: "",
-        repository: ""
-    },
-    {
-        headline: "Steam Market Tracker",
-        description: "Tracke Preise von CS:GO Items auf dem Steam Community Market Place.",
-        tags: ["nodejs", "javascript", "html", "css", "express", `"steamapi"`, "2022", "unfinished"],
-        image_url: "images/steammarkettracker.png",
-        file: "",
-        repository: ""
-    },
-    {
         headline: "Conway's Game of Life",
         description: "Der Klassiker Game of Life von John Horton Conway.",
         tags: ["javascript", "2021", "games"],

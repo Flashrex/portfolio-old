@@ -9,19 +9,21 @@
         <link rel="stylesheet" href="stylesheets/style.css">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         <link rel="icon" type="image/png" href="images/website_logo.png">
+        <script src="https://kit.fontawesome.com/39a1abf5a5.js" crossorigin="anonymous"></script>
     </head>
     <body class="bg-dark">
+        <div class="background"></div>
         <div class="top-section bg-dark">
             <div class="navbar">
                 <div class="navbar-logo">
-                    <a class="hyperlink headline-text font-darkmode-white" onclick="scrollToSection(0)">Flashrex's Website</a>
+                    <a class="hyperlink headline-text font-darkmode-white" href="#aboutme" onclick="">Flashrex's Website</a>
                 </div>
                 <div class="vertical-seperator"></div>
                 <div class="navbar-items">
                     <ul class="header-list">
-                        <li class="list-item"><a class="hyperlink underlined font-darkmode-white" onclick="scrollToSection(0)">Über mich</a></li>
-                        <li class="list-item"><a class="hyperlink font-darkmode-white" onclick="scrollToSection(1)">Projekte</a></li>
-                        <li class="list-item"><a class="hyperlink font-darkmode-white" onclick="scrollToSection(2)">Kontakt</a></li>
+                        <li class="list-item"><a class="hyperlink underlined font-darkmode-white" href="#aboutme">Über mich</a></li>
+                        <li class="list-item"><a class="hyperlink font-darkmode-white" href="#projects">Projekte</a></li>
+                        <li class="list-item"><a class="hyperlink font-darkmode-white" href="#contact">Kontakt</a></li>
                     </ul>
                 </div>
                 <img class="darkmode-icon cursor-pointer svg-color-light" id="dm-icon" src="images/sun.svg" style="width: 20px; height: 20px;" onclick="toggleDarkMode()">
@@ -30,7 +32,7 @@
         
         
         <div class="content">
-            <section class="aboutme-section">
+            <section class="aboutme-section" id="aboutme">
                 <div class="image-container">
                     <div id="name" class="headline-text text-large">Dominik Duda</div>
                     <div id="subtext" class="text-small font-highlight">Software Developer</div>
@@ -42,7 +44,7 @@
                 </div>
                 <div class="text-container bg-dark-contrast">
                     <div id="headline" class="headline-text text-large font-darkmode-white">Über mich</div>
-                    <p id="personal-data" class="font-highlight">25 Jahre / Fulda / Student</p>
+                    <p id="personal-data" class="font-highlight"><span id="age">0</span> Jahre / Fulda / Student</p>
                     <p id="bio" class="font-darkmode-white">
                         Ich beschäftige mich bereits seit meiner Jugend mit der Programmierung und bin durchs Modding auf die Softwareentwicklung aufmerksam geworden.
                         Meine erstes eigenes Projekt bestand aus einer kleinen Website für ein Schulprojekt in dem wir einen fiktiven Onlineshop aufsetzen und designen sollten.
@@ -63,28 +65,44 @@
                         <li><span>Andere Frameworks:</span> NodeJs, Express</li>
                         <li><span>Sonstige Kenntnisse:</span> Adobe Photoshop, Adobe Premiere, Cinema4D</li>
                     </ul>
-                    <div class="horizontal-seperator"></div>
                 </div>
             </section>
 
-            <section class="project-section">
+            <section class="project-section" id="projects">
                 <span class="inputfield">
                     <input class="text-input font-darkmode-white bg-dark-contrast" id="input_tag" type="text" placeholder="Projekt nach Name oder Tag suchen..." oninput="onSearchInput()">
                 </span>
                 <section class="projects-container" id="project_container"></section>
             </section>
 
-            <section class="contact-section">
-                <div class="email-form-container bg-dark-contrast font-darkmode-white">
-                    <h3>Kontaktiere mich</h3>
-                    <p style="user-select: text;">E-Mail: flashrexwastaken@gmail.com</p>
-                    <form>
-                        <input id="input_name" type="text" placeholder="Name" required>
-                        <input id="input_mail" type="email" placeholder="Email" required>
-                        <textarea placeholder="Nachricht" required></textarea>
-                        <button class="button disabled">Absenden</button>
-                        <p style="color:#eb2c1e">Achtung: Derzeit noch in Arbeit!<br>Nachricht wird nicht versendet.</p>
-                    </form>
+            <section class="contact-section" id="contact">
+                <div class="card bg-dark-contrast font-darkmode-white">
+                    <div class="box-container-top">
+                        <div class="shadow-box-top shadow-box-large"></div>
+                        <div class="shadow-box-top shadow-box-medium"></div>
+                        <div class="shadow-box-top shadow-box-small"></div>
+                    </div>
+
+                    <div class="card-text-container">
+                        <div class="name-container">
+                            <h2 class="font-darkmode-white">Flashrex</h2>
+                            <h4 class="font-highlight">Student</h4>
+                        </div>
+                        
+                        <div class="divider-vertical"></div>
+                        <div class="social-container">
+                            <a class="font-darkmode-white hyperlink" href="https://www.linkedin.com/in/dominik-duda-89b10b229/" target="_blank"><i class="fa-brands fa-linkedin"></i>Dominik Duda</a>
+                            <a class="font-darkmode-white hyperlink" href="https://github.com/Flashrex"><i class="fa-brands fa-github" target="_blank"></i>Flashrex</a>
+                            <a class="font-darkmode-white hyperlink" href="mailto:flashrex@gmx.de"><i class="fa-solid fa-square-envelope" target="_blank"></i>Flashrex@gmx.de</a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="box-container-bottom">
+                        <div class="shadow-box-bottom shadow-box-large"></div>
+                        <div class="shadow-box-bottom shadow-box-medium"></div>
+                        <div class="shadow-box-bottom shadow-box-small"></div>
+                    </div>
                 </div>
             </section>
         </div>

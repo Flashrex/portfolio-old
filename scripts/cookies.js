@@ -5,20 +5,15 @@ function checkCookies() {
     var cookiesEnabled = getCookie('cookieEnabled');
 
     switch(cookiesEnabled) {
-        case "":
-            //first time visit
-            createCookieDiv(); 
-            break;
-
         case "true":
             //cookies enabled
             darkmode = getCookie('darkmode') === "" ? true : getCookie('darkmode') === "true";
             applyDarkmode();
             break;
 
-        case "false":
-            //cookies disabled
-            applyDarkmode();
+        default:
+            //first time visit or cookies declined
+            createCookieDiv(); 
             break;
     }
 }
@@ -26,9 +21,8 @@ function checkCookies() {
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    let expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  }
+    document.cookie = `${cname}=${cvalue};expires=${d.toUTCString};SameSite=Lax;path=/`;
+}
   
 function getCookie(cname) {
     let name = cname + "=";
@@ -100,7 +94,6 @@ function onUserAcceptedCookies() {
   
 function onUserDeclinedCookies() {
     removeCookieDiv();
-    setCookie("cookieEnabled", "false", 30);
 }
 
 /* Darkmode */

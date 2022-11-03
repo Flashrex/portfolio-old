@@ -11,14 +11,12 @@ document.addEventListener('scroll', (e) => {
     if(window.scrollY < aboutSection.scrollHeight-50) {
         underlineHeaderElement(0);
     }
-    else if(window.scrollY >= aboutSection.scrollHeight-50 && window.scrollY <= projectSection.scrollHeight - contactSection.scrollHeight) {
+    else if(window.scrollY >= aboutSection.scrollHeight-250 && window.scrollY <= projectSection.scrollHeight - contactSection.scrollHeight) {
         underlineHeaderElement(1);
     } 
-    else if(window.scrollY >= projectSection.scrollHeight && window.scrollY <= document.documentElement.scrollHeight - contactSection.scrollHeight) {
+    else if(window.scrollY >= projectSection.scrollHeight+250 && window.scrollY <= document.documentElement.scrollHeight - contactSection.scrollHeight) {
         underlineHeaderElement(2);
     }
-
-
 })
 
 function underlineHeaderElement(index) {
@@ -27,27 +25,26 @@ function underlineHeaderElement(index) {
     headerItems.children[index].children[0].classList.add("underlined");
 }
 
-function scrollToSection(index) {
-    // underlineHeaderElement(index);
+window.onload = (e) => {
+    const ageElem = document.getElementById("age");
+    var date = new Date();
 
-    let top = 0;
-    switch(index) {
-        
-        case 1: //projects
-            top = aboutSection.scrollHeight;
-            window.scrollTo({top: top, left: 0, behavior: 'smooth'});
-            break;
+    var age = date.getFullYear() - 1996;
+    if(date.getMonth() < 3 || (date.getMonth() === 4 && date.getDate() < 26)) age -= 1;
 
-        case 2: //contact
-            top = aboutSection.scrollHeight + projectSection.scrollHeight;
-            window.scrollTo({top: top, left: 0, behavior: 'smooth'});
-            break;
+    ageElem.innerHTML = age;
+}
 
-        default: 
-            //scroll to top
-            window.scrollTo({top: top, left: 0, behavior: 'smooth'});
-            // aboutSection.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-            
-            break;
-    }
+/* business card hover effect */ 
+
+const card = document.querySelector(".card");
+card.onmousemove = (e) => {
+    const { currentTarget: target } = e;
+
+    const rect = target.getBoundingClientRect(),
+          x = e.clientX - rect.left,
+          y = e.clientY - rect.top;  
+
+    target.style.setProperty("--mouse-x", `${x}px`);
+    target.style.setProperty("--mouse-y", `${y}px`);
 }
