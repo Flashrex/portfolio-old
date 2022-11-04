@@ -305,7 +305,7 @@ body {
 @media(max-width: 40em) { 
     .aboutme-section {
         display: block;
-        margin-left: 0;
+        text-align: center;
     }
 }
 
@@ -398,6 +398,7 @@ body {
 
     .text-container {
         width: 300px;
+        text-align: center;
     }
 }
 
@@ -419,7 +420,7 @@ body {
     font-style: italic; 
 }
 
-#bio {
+.bio-p {
     width: 80%;
     margin-left: 2vw;
     letter-spacing: .05em;
@@ -637,6 +638,7 @@ body {
     transition: transform 0.4s;
 }
 
+
 .card:hover {
     transform: scale(1.05);
 }
@@ -745,7 +747,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
-
 }
 
 .name-container {
@@ -761,6 +762,17 @@ body {
 .name-container > h2, .name-container > h4 {
     margin: 0;
     margin-left: 7rem;
+}
+
+@media(max-width: 40em) { 
+    .name-container > h2, .name-container > h4 {
+        margin-left: 2rem;
+    }
+
+    .social-container > .hyperlink {
+        margin-left: 0.4rem;
+        font-size: 0.75rem;
+    }
 }
 
 .social-container > a {
