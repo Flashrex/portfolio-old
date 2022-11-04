@@ -13,11 +13,15 @@ class PokeGame {
     reset() {
         this.container.innerHTML = "";
         this.pokemon = Pokemon;
+        this.maxTime = 600;
+        this.points = 0;
 
         if(this.timer !== undefined) {
             clearInterval(this.timer);
             this.timer = undefined;
         }
+
+        this.generateTextFields();
     }
 
     generateTextFields() {
@@ -33,8 +37,15 @@ class PokeGame {
         }
     }
 
+    clearTextFields() {
+        document.querySelectorAll('.poke-field').forEach(e => {
+            e.innerHTML = "";
+        });
+    }
+
     start() {
         if(this.timer !== undefined) return;
+        this.reset();
 
         this.startTime = Date.now();
 
