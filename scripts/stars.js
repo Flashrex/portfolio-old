@@ -1,10 +1,8 @@
 /* create random stars */
 const starCount = 250;
 
-window.onload = (e) => {
-    createStars();
-    animateStars();
-}
+createStars();
+animateStars();
 
 function createStars() {
     const bg = document.querySelector('.background');
@@ -33,7 +31,6 @@ function createStars() {
 function animateStars() {
     setInterval(() => {
         document.querySelectorAll('.star').forEach(e => {
-            console.log('Test');
             if(Math.random() > 0.8) {
                 if(e.classList.contains('star-dark')) {
                     e.classList.remove('star-dark');
