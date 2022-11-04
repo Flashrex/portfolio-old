@@ -26,6 +26,12 @@ function underlineHeaderElement(index) {
 }
 
 window.onload = (e) => {
+    calculateAndSetAge();
+    createStars();
+    animateStars();
+}
+
+function calculateAndSetAge() {
     const ageElem = document.getElementById("age");
     var date = new Date();
 
@@ -56,15 +62,13 @@ const handleMouseMovement = e => {
 /* create random stars */
 const starCount = 250;
 
-window.onload = (e) => {
+function createStars() {
     const bg = document.querySelector('.background');
     
     const dim = {
         height: window.innerHeight,
         width: window.innerWidth
     }
-
-    console.log(`height: ${dim.height}, width: ${dim.width}`);
 
     for(var i = 0; i < starCount; i++) {
         const star = document.createElement("div");
@@ -74,9 +78,15 @@ window.onload = (e) => {
         star.style.left = `${Math.floor(Math.random() * dim.width)}px`;
         star.style.top =`${Math.floor(Math.random() * dim.height)}px`;
 
+        const size = Math.random() * 2;
+
+        star.style.boxShadow = `${size}px ${size}px ${size}px ${size}px rgb(255, 255, 255)`;
+
         bg.appendChild(star);
     }
+}
 
+function animateStars() {
     setInterval(() => {
         document.querySelectorAll('.star').forEach(e => {
             console.log('Test');
@@ -92,5 +102,4 @@ window.onload = (e) => {
             }
         });
     }, 1000);
-
 }

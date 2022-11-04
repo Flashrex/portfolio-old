@@ -124,11 +124,9 @@ body {
 
 .star {
     position: absolute;
-    width: 0px;
-    height: 0px;
-    background-color: white;
+    width: 0;
+    height: 0;
     border-radius: 100%;
-    box-shadow: 1px 1px 1px 1px rgb(253, 253, 253);
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -456,12 +454,13 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     max-height: 160rem;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 @media(max-width: 40em) { 
     .projects-container {
         margin: 0;
+        overflow: scroll;
     }
 }
 
