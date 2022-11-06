@@ -12,36 +12,45 @@
         <link rel="icon" type="image/png" href="../../../images/website_logo.png">
     </head>
     <body class="bg-dark">
-        <div class="navbar">
-            <div class="navbar-logo">
-                <a class="hyperlink headline-text font-darkmode-white" href="../../../index.html">Flashrex's Website</a>
+        <div class="background"></div>
+        <div class="top-section bg-dark">
+            <div class="navbar">
+                <div class="navbar-logo">
+                    <a class="hyperlink headline-text font-darkmode-white" href="../../../index.html">Flashrex's Website</a>
+                </div>
+                <div class="vertical-seperator"></div>
+                <div class="navbar-items">
+                    <ul class="header-list">
+                        <li class="list-item"><a class="hyperlink font-darkmode-white" href="../../../index.html" >Über mich</a></li>
+                        <li class="list-item"><a class="hyperlink underlined font-darkmode-white" href="../../../index.html" >Projekte</a></li>
+                        <li class="list-item"><a class="hyperlink font-darkmode-white" href="../../../index.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <img class="darkmode-icon cursor-pointer svg-color-light" id="dm-icon" src="images/sun.svg" style="width: 20px; height: 20px;" onclick="toggleDarkMode()">
             </div>
-            <div class="vertical-seperator"></div>
-            <div class="navbar-items">
-                <ul class="header-list">
-                    <li class="list-item"><a class="hyperlink font-darkmode-white" href="../../../index.html" >Über mich</a></li>
-                    <li class="list-item"><a class="hyperlink underlined font-darkmode-white" href="../../../index.html" >Projekte</a></li>
-                    <li class="list-item"><a class="hyperlink font-darkmode-white" href="../../../index.html">Kontakt</a></li>
-                </ul>
-            </div>
-            <img class="darkmode-icon cursor-pointer svg-color-light" id="dm-icon" src="images/sun.svg" style="width: 20px; height: 20px;" onclick="toggleDarkMode()">
         </div>
+        
 
-        <div class="content-projects">
-            <div class="gol_container">
-                <h2 class="h2_controls_p1 font-darkmode-white">Steuerung - Spieler 1</h2>
-                <p class="p_controls_p1 font-darkmode-white">Oben - W <br> Unten - S</p>
-            
-                <h2 class="h2_controls_p2 font-darkmode-white">Steuerung - Spieler 2</h2>
-                <p class="p_controls_p2 font-darkmode-white">Oben - Pfeil Oben <br> Unten - Pfeil Unten</p>
+        <div class="content">
+            <section class="pong-section">
+                <div class="controls-left">
+                    <h2 class="h2_controls_p1 font-darkmode-white">Steuerung - Spieler 1</h2>
+                    <p class="p_controls_p1 font-darkmode-white">Oben - W <br> Unten - S</p>
+                </div>
+                <div class="controls-right">
+                    <h2 class="h2_controls_p2 font-darkmode-white">Steuerung - Spieler 2</h2>
+                    <p class="p_controls_p2 font-darkmode-white">Oben - Pfeil Oben <br> Unten - Pfeil Unten</p>
+                </div>
+                
                 <div class="canvas-container">
                     <canvas id="pong" width="700" height="500"></canvas>
                 </div>
-            </div>
+            </section>
         </div>
         
 
         <script src="../../../scripts/cookies.js"></script>
         <script src="pong.js"></script>
+        <script src="../../../scripts/stars.js"></script>
     </body>
 </html>
