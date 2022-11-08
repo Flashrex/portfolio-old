@@ -12,7 +12,7 @@ function createStars() {
         width: window.innerWidth
     }
 
-    for(var i = 0; i < starCount; i++) {
+    for(var i = 0; i < starCount-1; i++) {
         const star = document.createElement("div");
         star.classList.add('star');
         star.classList.add('star-light');
@@ -21,9 +21,7 @@ function createStars() {
         star.style.top =`${Math.floor(Math.random() * dim.height)}px`;
 
         const size = Math.random() * 2;
-
         star.style.boxShadow = `${size}px ${size}px ${size}px ${size}px rgb(255, 255, 255)`;
-
         bg.appendChild(star);
     }
 }
