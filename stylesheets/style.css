@@ -3,10 +3,10 @@
 /* Global */
 :root {
     --bg-dark: #1A1A1A;
-    --bg-light: #f1f1f1;
+    --bg-light: #dadada;
     --bg-contrast: #141414;
-    --bg-contrast-light: #bdbdbd;
-    --font-darkmode-white: #eeeeee;
+    --bg-contrast-light: #ffffff;
+    --font-darkmode-white: #f1f1f1;
     --font-lightmode-black: #111;
     --font-darkmode-grey: #8f8f8f;
     --font-lightmode-grey: #8f8f8f;
