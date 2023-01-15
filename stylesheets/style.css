@@ -823,14 +823,15 @@ body {
 
 /* date.html */
 .date-section {
-    width: auto;
+    margin-top: 16vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     text-align: center;
-    margin: 12rem 4rem;
 }
 
 .text-huge {
-    font-size: 4.2rem;
+    font-size: 4rem;
     margin: 0;
 }
