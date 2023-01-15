@@ -378,7 +378,8 @@ body {
 }
 
 .timeline-container {
-    margin-top: 2.5vh;
+    position: relative;
+    margin-top: 1vh;
     width: 100%;
     height: 25vh;
 }
@@ -390,34 +391,50 @@ body {
 }
 
 .timeline {
-    position: relative;
+    position: absolute;
     width: 90%;
     height: 2px;
     left: 5%;
-    top: calc(50% - 1px);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-
 .event {
-    position: relative;
-    top: 50%;
-    left: 1%;
+    position: absolute;
     display: inline-block;
+    top: 50%;
+    width: 140px;
 }
 
 .event-top {
     transform: translateY(-100%);
 }
 
+#event1 {
+    left: -20px;
+}
+
+#event2 {
+    left: 25%;
+}
+
+#event3 {
+    left: 35%;
+}
+
+#event4 {
+    left: 50%;
+}
+
 .timeline-dot {
+    position: absolute;
     width: 4px;
     height: 4px;
     margin-left: 50%;
-    margin-top: -4px;
+    margin-top: -2px;
 }
 
 .event-description {
-    width: fit-content;
     text-align: center;
     margin: 0.5rem;
 }
