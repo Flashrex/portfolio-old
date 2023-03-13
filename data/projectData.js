@@ -1,5 +1,13 @@
 var projects = [
     {
+        headline: "Artlocker",
+        description: "Full Stack WebApplikation. (Marktplatz für Kunst)",
+        tags: ["html", "css", "javascript", "nodejs", "express", "passport", "mysql", "dotenv", "2022"],
+        image_url: "images/website_logo.png",
+        file: "",
+        repository: "https://github.com/Flashrex/ArtLocker"
+    },
+    {
         headline: "Website",
         description: "Die Website, die du dir gerade anschaust.",
         tags: ["html", "css", "javascript", "p5.js", "2022"],
