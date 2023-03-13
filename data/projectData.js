@@ -24,14 +24,6 @@ var projects = [
         repository: "https://github.com/Flashrex/FirstReactApp"
     },
     {
-        headline: "Sorting Algorithm Visualization",
-        description: "Visualisierung von verschiedenen Sortier-Algorithmen.<br>(Derzeit nur Quick Sort)",
-        tags: ["javascript", "2022"],
-        image_url: "images/sorting.png",
-        file: "projects/sorting/index.html",
-        repository: "https://github.com/Flashrex/flashrex.github.io/tree/master/projects/sorting"
-    },
-    {
         headline: "Pokequiz",
         description: "Stelle dein Wissen über Pokemon unter Beweis!",
         tags: ["html", "css", "javascript", "2022", "games"],
@@ -46,14 +38,6 @@ var projects = [
         image_url: "images/gameoflife.png",
         file: "projects/games/gameoflife/index.html",
         repository: "https://github.com/Flashrex/flashrex.github.io/tree/master/projects/games/gameoflife"
-    },
-    {
-        headline: "GTA RP Voice",
-        description: "Voice Script Ressource für alt:V Multiplayer.<br>Fügt einen 3D-Voice Chat, Custom Voice Channels sowie ein Funkgerät hinzu.",
-        tags: ["c#", "html", "css", "javascript", "gtav", "alt:V", "2021"],
-        image_url: "images/altvoice.png",
-        file: "",
-        repository: "https://github.com/Flashrex/alt-Voice"
     },
     {
         headline: "alt:V Youtube Tutorial Serie",
@@ -78,13 +62,5 @@ var projects = [
         image_url: "images/ragemp.png",
         file: "",
         repository: "https://github.com/Flashrex/RageTutorial"
-    },
-    {
-        headline: "VR-Suit",
-        description: "Meine erste eigene kleine Website für ein Schulprojekt.",
-        tags: ["html", "css", "javascript", "2018"],
-        image_url: "projects/vr_suit/images/logo.png",
-        file: "projects/vr_suit/index.html",
-        repository: "https://github.com/Flashrex/flashrex.github.io/tree/master/projects/vr_suit"
-    },
+    }
 ]
