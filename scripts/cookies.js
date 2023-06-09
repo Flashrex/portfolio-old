@@ -128,7 +128,8 @@ function applyDarkmode() {
     let icon = document.getElementById("dm-icon");
     icon.classList.add(!darkmode ? "svg-color-dark" : "svg-color-light");
     icon.classList.remove(!darkmode ? "svg-color-light" : "svg-color-dark");
-    icon.src = darkmode ? "images/sun.svg" : "images/moon.svg";
+    
+    icon.src = darkmode ? `${window.location.origin}/images/icons/sun.svg` : `${window.location.origin}/images/icons/moon.svg`;
 }
 
 
