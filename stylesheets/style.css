@@ -1,4 +1,3 @@
-
 /* Global */
 :root {
     --bg-dark: #1A1A1A;
@@ -61,18 +60,18 @@
 ::-webkit-scrollbar {
     width: 14px;
 }
-  
-  /* Track */
+
+/* Track */
 ::-webkit-scrollbar-track {
     background: var(--font-darkmode-grey);
 }
-  
-  /* Handle */
+
+/* Handle */
 ::-webkit-scrollbar-thumb {
     background: #555;
 }
-  
-  /* Handle on hover */
+
+/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #149e52;
 }
@@ -103,18 +102,14 @@ body {
 }
 
 .background::before {
-    background: 
-    radial-gradient(
-        2400px circle at 0 0,
-        rgba(255, 255, 255, 0.02),
-        transparent 40%
-    ),
-    radial-gradient(
-        2400px circle at 100vw 100vh,
-        rgba(255, 255, 255, 0.02),
-        transparent 40%
-    );
-    
+    background:
+        radial-gradient(2400px circle at 0 0,
+            rgba(255, 255, 255, 0.02),
+            transparent 40%),
+        radial-gradient(2400px circle at 100vw 100vh,
+            rgba(255, 255, 255, 0.02),
+            transparent 40%);
+
     content: "";
     position: absolute;
     height: 100%;
@@ -155,7 +150,7 @@ body {
     border-radius: 5px;
 }
 
-@media(max-width: 40em) { 
+@media(max-width: 40em) {
     .cookieDiv {
         width: 80%;
         height: auto;
@@ -198,7 +193,7 @@ body {
     flex-direction: column;
 }
 
-@media(max-width: 40em) { 
+@media(max-width: 40em) {
     .content {
         justify-content: center;
     }
@@ -223,7 +218,7 @@ body {
     padding: 0.5rem;
 }
 
-@media(max-width: 40em) { 
+@media(max-width: 40em) {
     .navbar {
         width: 90%;
         left: 5%;
@@ -259,7 +254,7 @@ body {
     margin: 1vw;
 }
 
-@media(max-width: 40em) { 
+@media(max-width: 40em) {
     .header-list {
         width: 100px;
         padding: 0;
@@ -301,7 +296,7 @@ body {
     padding-bottom: 4rem;
 }
 
-@media(max-width: 40em) { 
+@media(max-width: 40em) {
     .aboutme-section {
         display: block;
         text-align: center;
@@ -313,20 +308,24 @@ body {
     background-image: url("../images/ente.jpg");
     min-width: 300px;
     height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
 }
 
-@media(max-width: 40em) { 
+@media(max-width: 40em) {
     .image-container {
         width: 60vw;
     }
 }
 
 .icon-container {
-    position: absolute;
-    bottom: 8%;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-bottom: 8rem;
     text-align: justify;
+    display: flex;
+    justify-content: center;
 }
 
 .social-icon {
@@ -343,18 +342,10 @@ body {
 
 #name {
     color: var(--font-darkmode-white);
-    position: absolute;
-    bottom: 20%;
-    left: 50%;
-    transform: translateX(-50%);
     white-space: nowrap;
 }
 
 #subtext {
-    position: absolute;
-    bottom: 15%;
-    left: 50%;
-    transform: translateX(-50%);
     font-size: 1rem;
     font-weight: bolder;
     line-height: 24px;
@@ -383,7 +374,7 @@ body {
     height: 25vh;
 }
 
-@media(max-width: 110em) { 
+@media(max-width: 110em) {
     .timeline-container {
         display: none;
     }
@@ -448,7 +439,7 @@ body {
     margin-top: 4vh;
 }
 
-@media(max-width: 40em) { 
+@media(max-width: 40em) {
 
     .text-container {
         width: 60vw;
@@ -463,7 +454,7 @@ body {
     margin-top: 0.5vh;
     margin-left: 2vw;
     font-family: cursive;
-    font-style: italic; 
+    font-style: italic;
 }
 
 .bio-p {
@@ -505,7 +496,7 @@ body {
     overflow: hidden;
 }
 
-@media(max-width: 40em) { 
+@media(max-width: 40em) {
     .projects-container {
         margin: 0;
         overflow: scroll;
@@ -525,11 +516,9 @@ body {
 }
 
 .item::before {
-    background: radial-gradient(
-        800px circle at var(--mouse-x) var(--mouse-y),
-        rgba(255, 255, 255, 0.06),
-        transparent 40%
-    );
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
+            rgba(255, 255, 255, 0.06),
+            transparent 40%);
     content: "";
     position: absolute;
     height: 100%;
@@ -564,16 +553,16 @@ body {
     letter-spacing: 0.5px;
 }
 
-.item-info > h3 {
+.item-info>h3 {
     margin: 4vh 0 2vh 0;
 }
 
-.item-info > p {
+.item-info>p {
     margin: 0 0 2vh 0;
     font-size: 1rem;
 }
 
-.btn-container  {
+.btn-container {
     display: flex;
     position: relative;
     width: 100%;
@@ -581,7 +570,7 @@ body {
     text-align: center;
 }
 
-.button  {
+.button {
     text-decoration: none;
     border: none;
     color: var(--font-darkmode-white);
@@ -613,7 +602,7 @@ body {
 
 
 
-.tag-container  {
+.tag-container {
     position: relative;
     width: 100%;
     display: flex;
@@ -645,7 +634,7 @@ body {
     border-radius: 3px;
 }
 
-@media(max-width: 40em) { 
+@media(max-width: 40em) {
     .text-input {
         width: 100%;
     }
@@ -666,7 +655,7 @@ body {
     justify-content: center;
 }
 
-@media(max-width: 40em) { 
+@media(max-width: 40em) {
     .contact-section {
         width: 100%;
         left: 0;
@@ -688,11 +677,9 @@ body {
 }
 
 .card::before {
-    background: radial-gradient(
-        800px circle at var(--mouse-x) var(--mouse-y),
-        rgba(255, 255, 255, 0.06),
-        transparent 40%
-    );
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
+            rgba(255, 255, 255, 0.06),
+            transparent 40%);
     content: "";
     position: absolute;
     height: 100%;
@@ -793,7 +780,8 @@ body {
     gap: 0.4rem;
 }
 
-.name-container > h2, .name-container > h4 {
+.name-container>h2,
+.name-container>h4 {
     margin: 0;
     margin-left: 7rem;
 }
@@ -808,25 +796,27 @@ body {
     gap: 0.5rem;
 }
 
-@media(max-width: 40em) { 
-    .name-container > h2, .name-container > h4 {
+@media(max-width: 40em) {
+
+    .name-container>h2,
+    .name-container>h4 {
         margin-left: 2rem;
     }
 
-    .social-container > .hyperlink {
+    .social-container>.hyperlink {
         margin-left: 0.4rem;
         font-size: 0.75rem;
     }
 }
 
-.social-container > a {
+.social-container>a {
     margin-left: 2.5rem;
     display: flex;
     align-items: center;
     gap: 0.25rem;
 }
 
-.social-container > a > svg {
+.social-container>a>svg {
     width: 20px;
     height: 20px;
     margin-right: 0.5rem;
@@ -836,7 +826,7 @@ body {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(19deg) brightness(150%) contrast(103%);
 }
 
-@media(max-width: 40em) { 
+@media(max-width: 40em) {
     .card {
         margin-left: 0;
         width: 300px;

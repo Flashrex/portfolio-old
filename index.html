@@ -1,186 +1,195 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Flashrex's Website</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="stylesheets/style.css">
-        <link rel="icon" type="image/png" href="images/website_logo.png">
-    </head>
-    <body class="bg-dark">
-        <div class="background"></div>
-        <div class="top-section bg-dark-contrast">
-            <div class="navbar">
-                <div class="navbar-logo">
-                    <a class="hyperlink headline-text font-darkmode-white" href="#aboutme" onclick="">Flashrex's Website</a>
-                </div>
-                <div class="vertical-seperator"></div>
-                <div class="navbar-items">
-                    <ul class="header-list">
-                        <li class="list-item"><a class="hyperlink underlined font-darkmode-white" href="#aboutme">Über mich</a></li>
-                        <li class="list-item"><a class="hyperlink font-darkmode-white" href="#projects">Projekte</a></li>
-                        <li class="list-item"><a class="hyperlink font-darkmode-white" href="#contact">Kontakt</a></li>
-                    </ul>
-                </div>
-                <img class="darkmode-icon cursor-pointer svg-color-light" id="dm-icon" src="images/icons/sun.svg" style="width: 20px; height: 20px;" onclick="toggleDarkMode()">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flashrex's Website</title>
+    <meta name="description" content="Personal Portfolio Website by Flashrex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="icon" type="image/png" href="images/website_logo.png">
+</head>
+
+<body class="bg-dark">
+    <div class="background"></div>
+    <div class="top-section bg-dark-contrast">
+        <div class="navbar">
+            <div class="navbar-logo">
+                <a class="hyperlink headline-text font-darkmode-white" href="#aboutme" onclick="">Flashrex's Website</a>
             </div>
+            <div class="vertical-seperator"></div>
+            <div class="navbar-items">
+                <ul class="header-list">
+                    <li class="list-item"><a class="hyperlink underlined font-darkmode-white" href="#aboutme">Über
+                            mich</a></li>
+                    <li class="list-item"><a class="hyperlink font-darkmode-white" href="#projects">Projekte</a></li>
+                    <li class="list-item"><a class="hyperlink font-darkmode-white" href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
+            <img class="darkmode-icon cursor-pointer svg-color-light" id="dm-icon" src="images/icons/sun.svg"
+                style="width: 20px; height: 20px;" onclick="toggleDarkMode()">
         </div>
-        
-        
-        <div class="content">
-            <section class="aboutme-section" id="aboutme">
-                <div class="image-container">
-                    <a href="date.html" class="star star-light" style="left: 20px; top: 20px; box-shadow: 0px 0px 1px 1px #2980e4"> </a>
-                    <div id="name" class="headline-text text-large">Dominik Duda</div>
-                    <div id="subtext" class="text-small font-highlight">Student</div>
-                    <div class="icon-container">
-                        <a class="social-icon" href="https://www.linkedin.com/in/dominik-duda-89b10b229/" target="_blank"><img src="images/icons/linkedin.svg" style="width: 25px; height: 25px;"></a>
-                        <a class="social-icon" href="https://github.com/Flashrex" target="_blank"><img src="images/icons/github.svg" style="width: 25px; height: 25px;" ></a>
-                        <a class="social-icon" href="https://twitter.com/Flashrex_" target="_blank"><img src="images/icons/twitter.svg" style="width: 25px; height: 25px;" ></a>
-                    </div>
+    </div>
+
+
+    <div class="content">
+        <section class="aboutme-section" id="aboutme">
+            <div class="image-container">
+                <a href="date.html" class="star star-light"
+                    style="left: 20px; top: 20px; box-shadow: 0px 0px 1px 1px #2980e4"> </a>
+                <div id="name" class="headline-text text-large">Dominik Duda</div>
+                <div id="subtext" class="text-small font-highlight">Student</div>
+                <div class="icon-container">
+                    <a class="social-icon" href="https://www.linkedin.com/in/dominik-duda-89b10b229/"
+                        target="_blank"><img src="images/icons/linkedin.svg" style="width: 25px; height: 25px;"></a>
+                    <a class="social-icon" href="https://github.com/Flashrex" target="_blank"><img
+                            src="images/icons/github.svg" style="width: 25px; height: 25px;"></a>
+                    <a class="social-icon" href="https://twitter.com/Flashrex_" target="_blank"><img
+                            src="images/icons/twitter.svg" style="width: 25px; height: 25px;"></a>
+                    <a class="social-icon" href="https://leetcode.com/Flashrex/" target="_blank"><img
+                            src="images/icons/leetcode.svg" style="width: 25px; height: 25px;"></a>
                 </div>
-                <div class="text-container bg-dark-contrast">
-                    <div id="headline" class="headline-text text-large font-darkmode-white">Über mich</div>
-                    <p id="personal-data" class="font-highlight"><span id="age">0</span> Jahre / Fulda / Student</p>
-                    
-                    <div class="skill-container">
-                        <p class="headline-text font-darkmode-white">Kenntnisse</p>
-                        <div class="skill">
-                            <p class="font-darkmode-white">Sprachen</p>
-                            <div class="tag-container">
-                                <div class="tag">Deutsch</div>
-                                <div class="tag">Englisch</div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <p class="font-darkmode-white">Programmiersprachen</p>
-                            <div class="tag-container">
-                                <div class="tag">C#</div>
-                                <div class="tag">Javascript</div>
-                                <div class="tag">HTML/CSS</div>
-                                <div class="tag">Typescript</div>
-                                <div class="tag">Java</div>
-                                <div class="tag">C</div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <p class="font-darkmode-white">Frameworks/Libraries</p>
-                            <div class="tag-container">
-                                <div class="tag">NodeJs</div>
-                                <div class="tag">Express</div>
-                                <div class="tag">React</div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <p class="font-darkmode-white">API's</p>
-                            <div class="tag-container">
-                                <div class="tag">DiscordNET</div>
-                                <div class="tag">RageMP</div>
-                                <div class="tag">alt:V</div>
-                                <div class="tag">steamAPI</div>
-                                <div class="tag">PokeAPI</div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <p class="font-darkmode-white">Sonstiges</p>
-                            <div class="tag-container">
-                                <div class="tag">Adobe Photoshop</div>
-                                <div class="tag">Adobe Premiere</div>
-                                <div class="tag">Cinema4D</div>
-                            </div>
+            </div>
+            <div class="text-container bg-dark-contrast">
+                <div id="headline" class="headline-text text-large font-darkmode-white">Über mich</div>
+                <p id="personal-data" class="font-highlight"><span id="age">0</span> Jahre / Fulda / Student</p>
+
+                <div class="skill-container">
+                    <p class="headline-text font-darkmode-white">Kenntnisse</p>
+                    <div class="skill">
+                        <p class="font-darkmode-white">Sprachen</p>
+                        <div class="tag-container">
+                            <div class="tag">Deutsch</div>
+                            <div class="tag">Englisch</div>
                         </div>
                     </div>
-                    <div class="timeline-container">
-                        <div class="timeline bg-highlight"></div>
-
-                        <div id="event1" class="event event-top">
-                            <div class="event-description">
-                                <p class="event-note font-darkmode-white"> </p>
-                                <p class="event-note font-darkmode-white">1996</p>
-                            </div>
-                            <div class="timeline-dot bg-highlight"></div>
+                    <div class="skill">
+                        <p class="font-darkmode-white">Programmiersprachen</p>
+                        <div class="tag-container">
+                            <div class="tag">C#</div>
+                            <div class="tag">Javascript</div>
+                            <div class="tag">HTML/CSS</div>
+                            <div class="tag">Typescript</div>
+                            <div class="tag">Java</div>
+                            <div class="tag">C</div>
                         </div>
-
-                        <div id="event2" class="event">
-                            <div class="timeline-dot bg-highlight"></div>
-                            <div class="event-description">
-                                <p class="event-note font-darkmode-white">Praktikum IT-System-Kaufmann</p>
-                                <p class="event-note font-darkmode-white">Workstation Hannover GmbH</p>
-                            </div>
+                    </div>
+                    <div class="skill">
+                        <p class="font-darkmode-white">Frameworks/Libraries</p>
+                        <div class="tag-container">
+                            <div class="tag">NodeJs</div>
+                            <div class="tag">Express</div>
+                            <div class="tag">React</div>
                         </div>
-
-                        <div id="event3" class="event event-top">
-                            <div class="event-description">
-                                <p class="event-note font-darkmode-white">Berufliche Schulen Eschwege</p>
-                                <p class="event-note font-darkmode-white">Fachabitur (2.3)</p>
-                            </div>
-                            <div class="timeline-dot bg-highlight"></div>
+                    </div>
+                    <div class="skill">
+                        <p class="font-darkmode-white">API's</p>
+                        <div class="tag-container">
+                            <div class="tag">DiscordNET</div>
+                            <div class="tag">RageMP</div>
+                            <div class="tag">alt:V</div>
+                            <div class="tag">steamAPI</div>
+                            <div class="tag">PokeAPI</div>
                         </div>
-                        
-                        <div id="event4" class="event">
-                            <div class="timeline-dot bg-highlight"></div>
-                            <div class="event-description">
-                                <p class="event-note font-darkmode-white">Bachelor AI</p>
-                                <p class="event-note font-darkmode-white">Hochschule Fulda</p>
-                            </div>
+                    </div>
+                    <div class="skill">
+                        <p class="font-darkmode-white">Sonstiges</p>
+                        <div class="tag-container">
+                            <div class="tag">Adobe Photoshop</div>
+                            <div class="tag">Adobe Premiere</div>
+                            <div class="tag">Cinema4D</div>
                         </div>
                     </div>
                 </div>
-            </section>
+                <div class="timeline-container">
+                    <div class="timeline bg-highlight"></div>
 
-            <section class="project-section" id="projects">
-                <span class="inputfield">
-                    <input class="text-input font-darkmode-white bg-dark-contrast" id="input_tag" type="text" placeholder="Projekt nach Name oder Tag suchen..." oninput="onSearchInput()">
-                </span>
-                <section class="projects-container" id="project_container"></section>
-            </section>
-
-            <section class="contact-section" id="contact">
-                <div class="card bg-dark-contrast font-darkmode-white">
-                    <div class="box-container-top">
-                        <div class="shadow-box-top shadow-box-large"></div>
-                        <div class="shadow-box-top shadow-box-medium"></div>
-                        <div class="shadow-box-top shadow-box-small"></div>
+                    <div id="event1" class="event event-top">
+                        <div class="event-description">
+                            <p class="event-note font-darkmode-white"> </p>
+                            <p class="event-note font-darkmode-white">1996</p>
+                        </div>
+                        <div class="timeline-dot bg-highlight"></div>
                     </div>
 
-                    <div class="card-text-container">
-                        <div class="name-container">
-                            <h2 class="font-darkmode-white">Flashrex</h2>
-                            <h4 class="font-highlight">Student</h4>
+                    <div id="event2" class="event">
+                        <div class="timeline-dot bg-highlight"></div>
+                        <div class="event-description">
+                            <p class="event-note font-darkmode-white">Praktikum IT-System-Kaufmann</p>
+                            <p class="event-note font-darkmode-white">Workstation Hannover GmbH</p>
                         </div>
-                        
-                        <div class="divider-vertical"></div>
-                        <div class="social-container">
-                            <a class="font-darkmode-white hyperlink" href="https://www.linkedin.com/in/dominik-duda-89b10b229/" target="_blank">
-                                <img class="icon" src="images/icons/linkedin.svg" style="width: 25px; height: 25px;">
-                                Dominik Duda
-                            </a>
-                            <a class="font-darkmode-white hyperlink" href="https://github.com/Flashrex">
-                                <img class="icon" src="images/icons/github.svg" style="width: 25px; height: 25px;">
-                                Flashrex
-                            </a>
-                            <a class="font-darkmode-white hyperlink" href="https://github.com/Flashrex">
-                                <img class="icon" src="images/icons/mail.svg" style="width: 25px; height: 25px;">
-                                Flashrex@gmx.de
-                            </a>
-                        </div>
-                        
                     </div>
 
-                    <div class="box-container-bottom">
-                        <div class="shadow-box-bottom shadow-box-large"></div>
-                        <div class="shadow-box-bottom shadow-box-medium"></div>
-                        <div class="shadow-box-bottom shadow-box-small"></div>
+                    <div id="event3" class="event event-top">
+                        <div class="event-description">
+                            <p class="event-note font-darkmode-white">Berufliche Schulen Eschwege</p>
+                            <p class="event-note font-darkmode-white">Fachabitur (2.3)</p>
+                        </div>
+                        <div class="timeline-dot bg-highlight"></div>
+                    </div>
+
+                    <div id="event4" class="event">
+                        <div class="timeline-dot bg-highlight"></div>
+                        <div class="event-description">
+                            <p class="event-note font-darkmode-white">Bachelor AI</p>
+                            <p class="event-note font-darkmode-white">Hochschule Fulda</p>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
 
-        <script src="./scripts/cookies.js"></script>
-        <script src="./data/projectData.js"></script>
-        <script src="./scripts/projects.js"></script>
-        <script src="./scripts/index.js"></script>
-    </body>
+        <section class="project-section" id="projects">
+            <span class="inputfield">
+                <input class="text-input font-darkmode-white bg-dark-contrast" id="input_tag" type="text"
+                    placeholder="Projekt nach Name oder Tag suchen..." oninput="onSearchInput()">
+            </span>
+            <section class="projects-container" id="project_container"></section>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="card bg-dark-contrast font-darkmode-white">
+                <div class="box-container-top">
+                    <div class="shadow-box-top shadow-box-large"></div>
+                    <div class="shadow-box-top shadow-box-medium"></div>
+                    <div class="shadow-box-top shadow-box-small"></div>
+                </div>
+
+                <div class="card-text-container">
+                    <div class="name-container">
+                        <h2 class="font-darkmode-white">Flashrex</h2>
+                        <h4 class="font-highlight">Student</h4>
+                    </div>
+
+                    <div class="divider-vertical"></div>
+                    <div class="social-container">
+                        <a class="font-darkmode-white hyperlink"
+                            href="https://www.linkedin.com/in/dominik-duda-89b10b229/" target="_blank">
+                            <img class="icon" src="images/icons/linkedin.svg" style="width: 25px; height: 25px;">
+                            Dominik Duda
+                        </a>
+                        <a class="font-darkmode-white hyperlink" href="https://github.com/Flashrex">
+                            <img class="icon" src="images/icons/mail.svg" style="width: 25px; height: 25px;">
+                            Flashrex@gmx.de
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="box-container-bottom">
+                    <div class="shadow-box-bottom shadow-box-large"></div>
+                    <div class="shadow-box-bottom shadow-box-medium"></div>
+                    <div class="shadow-box-bottom shadow-box-small"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./scripts/cookies.js"></script>
+    <script src="./data/projectData.js"></script>
+    <script src="./scripts/projects.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+
 </html>
