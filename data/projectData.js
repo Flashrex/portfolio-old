@@ -40,28 +40,12 @@ var projects = [
         repository: "https://github.com/Flashrex/flashrex.github.io/tree/master/projects/games/pokequiz"
     },
     {
-        headline: "Conway's Game of Life",
-        description: "Der Klassiker Game of Life von John Horton Conway.",
-        tags: ["javascript", "2021", "games"],
-        image_url: "images/gameoflife.png",
-        file: "projects/games/gameoflife/index.html",
-        repository: "https://github.com/Flashrex/flashrex.github.io/tree/master/projects/games/gameoflife"
-    },
-    {
         headline: "alt:V Youtube Tutorial Serie",
         description: "alt:V API Kurs.<br><br>>60.000 Youtube Aufrufe<br>~800 Discord Mitglieder<br>(stand 06.2022)",
         tags: ["c#", "html", "css", "javascript", "gtav", "alt:V", "discord", "2021"],
         image_url: "images/altv.png",
         file: "",
         repository: "https://github.com/Flashrex/altv-tutorial"
-    },
-    {
-        headline: "Pong!",
-        description: "Der Urvater der modernen Videospiele aus dem Jahre 1972.<br>Enthält 2-Spieler Modus.",
-        tags: ["javascript", "2020", "games"],
-        image_url: "images/pong.png",
-        file: "projects/games/pong/index.html",
-        repository: "https://github.com/Flashrex/flashrex.github.io/tree/master/projects/games/pong"
     },
     {
         headline: "Rage:MP Youtube Tutorial Serie",
