@@ -1,5 +1,13 @@
 var projects = [
     {
+        headline: "Quiz App/Framework",
+        description: "Erstelle eigene Quizzes und teste dein Wissen.",
+        tags: ["vue 3", "html", "css", "javascript", "2023"],
+        image_url: "images/quiz.png",
+        file: "",
+        repository: "https://github.com/Flashrex/quiz-app"
+    },
+    {
         headline: "Artlocker",
         description: "Full Stack WebApplikation. (Marktplatz für Kunst)",
         tags: ["html", "css", "javascript", "nodejs", "express", "passport", "mysql", "dotenv", "2022"],
