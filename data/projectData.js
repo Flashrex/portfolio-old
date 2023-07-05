@@ -2,7 +2,7 @@ var projects = [
     {
         headline: "Quiz App/Framework",
         description: "Erstelle eigene Quizzes und teste dein Wissen.",
-        tags: ["vue 3", "html", "css", "javascript", "2023"],
+        tags: ["vue 3", "html", "css", "typescript", "2023"],
         image_url: "images/quiz.png",
         file: "",
         repository: "https://github.com/Flashrex/quiz-app"
